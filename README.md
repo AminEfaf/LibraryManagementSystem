@@ -1,50 +1,38 @@
 # Library Management System
 
-## Project Overview
+A command-line application for managing library categories, books, and book orders using fundamental data structures.
 
-The Library Management System is designed to organize library resources effectively, catering to both patrons' needs and administrators' requirements for reporting and managing library operations. It uses an innovative tree data structure for categorization and a priority queue for efficient order processing.
+## Overview
 
----
+This project was developed as a **Data Structures course project**. It demonstrates the use of a tree data structure for organizing categories and subcategories, and a priority queue (max heap) for processing book orders efficiently.
+
+The system allows users to manage books, search the catalog, and handle prioritized book orders through a simple command-line interface.
 
 ## Features
 
-1. **Category and Subcategory Management**:
-   - Add and organize categories and subcategories.
-2. **Book Management**:
-   - Add, remove, search, and list books.
-3. **Order Processing**:
-   - Place orders with a priority queue based on price and submission time.
-4. **Command-Line Interface**:
-   - User-friendly command-line interface for all operations.
+* Add and organize categories and subcategories
+* Add, remove, search, and list books
+* Store books under relevant categories or subcategories
+* Process book orders using a priority queue based on price and submission time
+* Interact with the system through a command-line interface
 
----
+## Commands
 
-## How to Use
+* `Add Category <category name>` — Add a new category.
+* `Add Subcategory <subcategory name> to <category name>` — Add a subcategory to an existing category.
+* `Add Book <book data> to <category name>` — Add a book to a category.
+* `Remove Book <book name> from <category name>` — Remove a book from a category.
+* `Search <book name>` — Search for a book and display its information.
+* `List Books` — Display all books.
+* `List Books from <category name>` — Display books in a specific category.
+* `Order <book name>` — Place an order for a book.
+* `List Orders` — View the prioritized order queue.
 
-    - `Add Category <category name>`: Add a new category to the tree.
-    - `Add Subcategory <subcategory name> to <category name>`: Add a subcategory to an existing category.
-    - `Add Book <book data> to <category name>`: Add a book to a specified category.
-    - `Remove Book <book name> from <category name>`: Remove a book from a specified category.
-    - `Search <book name>`: Display information about a specific book.
-    - `List Books`: Display all books.
-    - `List Books from <category name>`: Display all books in a category.
-    - `Order <book name>`: Place an order for a book.
-    - `List Orders`: View the prioritized order queue.
+## Data Structures Used
 
----
-
-## Key Components
-
-1. **Tree Data Structure**:
-   - Organizes categories and subcategories efficiently.
-   - Stores books under relevant categories or subcategories.
-
-2. **Priority Queue (Max Heap)**:
-   - Manages orders based on price and submission time.
-   - Ensures efficient and fair order processing.
-  
----
+* **Tree Data Structure** — Organizes categories and subcategories hierarchically.
+* **Priority Queue (Max Heap)** — Manages book orders based on priority criteria.
 
 ## Feedback
 
-We welcome your feedback and suggestions! Feel free to reach out or open an issue in this repository.
+If you have suggestions or find a bug, please open an issue in this repository.
